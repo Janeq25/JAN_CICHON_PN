@@ -5,12 +5,11 @@
  *   Author: janek
  */ 
 
- //R24, R25 word registers, R22 milliseconds counter
 
 Main:
     nop
-    ldi R17, $01  // MSB
-    ldi R16, $02  // LSB
+    ldi R17, $03   // MSB
+    ldi R16, $E8 // LSB
     rcall DelayInMs
     rjmp Main
 
@@ -18,9 +17,8 @@ DelayInMs:
     rcall DelayOneMs
     dec R16
     brne DelayInMs
-    clc
     dec R17          // 1c                                                      LSB init for fine control     for crude control                                                      |                 |   |                        |
-    brcc DelayInMs   // 2c (-1 for every R25)       petla duration = -1 + R25*(5 + 5*(255-LSB_init))-1 + (255-MSB_init)*(255*5 - 1))
+    brpl DelayInMs   // 2c (-1 for every R25)       petla duration = -1 + R25*(5 + 5*(255-LSB_init))-1 + (255-MSB_init)*(255*5 - 1))
     ret
        
 DelayOneMs:
