@@ -82,13 +82,23 @@ _timer_isr:                   ; procedura obs³ugi przerwania timera
 
 _main:
     ldi R18, 0b01111111
-    out DDRD, R18  //set anode pins direction
+    out DDRD, R18       //set anode pins direction
     ldi R18, 0b00011110
-    out DDRB,  R18 //set cathode pin direction
+    out DDRB,  R18      //set cathode pin direction
 
-    //timer0 interrupt init
+    //timer1 interrupt init
+    ldi R18, 0
+    out TCCR1A, R18
+    ldi R18, 0b00001100 //set WGM11 (CTC mode) set CS12 (prescaler 256)
+    out TCCR1B, R18
 
+    ldi R18, 0
+    out OCR1AH, R18
+    ldi R18, 100
+    out OCR1AL, R18 //set output compare to 100
 
+    ldi R18, 0b01000000 //set output compare A interrupt
+    out TIMSK, R18
 
     sei //global interrupt enable
 

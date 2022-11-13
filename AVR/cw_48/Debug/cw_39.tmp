@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATtiny2313A"</DEVICE>
+ <WORKING_DIR>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313Adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\Debug/cw_39.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>cw_39.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>cw_39.map</FILE>
+  <FILE>cw_39.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Main><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>22</LINE></Main>
+  <Main_Loop><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>37</LINE></Main_Loop>
+  <DigitTo7SegCode><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>98</LINE></DigitTo7SegCode>
+  <DelayInMs><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>75</LINE></DelayInMs>
+  <DelayOneMs><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>83</LINE></DelayOneMs>
+  <Loop><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>89</LINE></Loop>
+  <SEG_CODES><FILE>C:\Users\janek\Desktop\JAN_CICHON_PN\AVR\cw_39\main.asm</FILE><LINE>119</LINE></SEG_CODES>
+ </LABELS>
+</ASSEMBLER_INFO>
